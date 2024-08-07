@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="public/font/gotham-bold-webfont.woff">
+    <link rel="stylesheet" href="https://iconos8.es/icon/85383/shopping-cart">
+    <link rel="stylesheet" href="node_modules/toastify-js/src/toastify.css">
+    <title>Proyecto final</title>
+</head>
+
+<body>
+    <div class="header">
+            <img src="imagen/logo.png" alt="Vinilum" class="logo">
+            <button id="cesta-carrito"><img width="50" height="50" src="https://img.icons8.com/material-sharp/24/FFFFFF/shopping-cart.png" alt="shopping-cart"/></button>
+    </div>
+    <main id="almacenamiento-card">
+
+    </main>
+    <div class="fondo-imagen"></div>
+    <div class="modal-contenedor">
+        <div class="modal-carrito">
+            <h3>Carrito</h3>
+            <button id="btn-cerrar-carrito"><i class="fas fa-times-circle"></i></button>
+            <div id="carrito-contenedor">
+
+            </div>
+            <p class="precioProducto">Precio total: $<span id="precioTotal"></span></p>
+        </div>
+    </div>
+    <script src="stock.js"></script>
+    <script src="home.js"></script>
+    <script src="carro.js"></script>
+    <script src="modal.js"></script>
+    <script src="node_modules/toastify-js/src/toastify.js"></script>
+</body>
+
+</html>
