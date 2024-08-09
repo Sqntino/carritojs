@@ -29,16 +29,15 @@ agregarAlCarro(productos.id)
 });
 
 
-//Toastify
-// document.getElementById("${productos.id}").addEventListener("click", function() {
+// document.getElementById("productos.id").addEventListener("click", function() {
 //     Toastify({
-//         text: "Producto agregado al carrito",
+//         text: "Producto añadido al carro",
 //         duration: 3000, 
-//         close: true, 
+//         newWindow: true,
+//         close: true,
 //         gravity: "top", 
 //         position: "right", 
 //         backgroundColor: "linear-gradient(to right, #00b09b, #96c93d)", 
 //         stopOnFocus: true, 
 //     }).showToast();
 // });
-

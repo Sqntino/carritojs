@@ -184,7 +184,7 @@ select {
 }
 
 .boton-eliminar:focus {
-    outline: none;
+    outline: black;
 }ss
 .card-image, .card-image img{
     width: 100%;
