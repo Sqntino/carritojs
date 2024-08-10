@@ -184,7 +184,7 @@ select {
 }
 
 .boton-eliminar:focus {
-    outline: black;
+    outline: none;
 }ss
 .card-image, .card-image img{
     width: 100%;
@@ -208,4 +208,8 @@ select {
 }
 .card-title{
     text-shadow: 5px 3px 10px orangered
+}
+table thead {
+    background:#302b63;
+    color:white;
 }
