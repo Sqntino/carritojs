@@ -43,17 +43,19 @@ botonComprar.addEventListener("click", () => {
 agregarAlCarro(productos.id)
 });
 
-const topUsuarios = document.getElementById("data")
-        fetch('')//topusers.json pero no me arroja la opcion para añadirlo
-            .then( response => response.json() )
-            .then( data => mostrarData(data) )
-            .catch( error => console.log(error) )
+const topUsuarios = document.getElementById("data");
 
-        const mostrarData = (data) => {
-            console.log(data)
-            let body = ""
-            for (var i = 0; i < data.length; i++) {      
-            body+=`<tr><td>${data[i].id}</td><td>${data[i].name}</td><td>${data[i].email}</td></tr>`
-            }
-            document.getElementById('data').innerHTML = body
-        }
+fetch('../topusers.json') //no funciona, lo arreglare mientras esta entregado.
+    .then(response => {
+        return response.json();
+    })
+    .then(data => mostrarData(data))
+    .catch(error => console.log('Error:', error));
+
+const mostrarData = (data) => {
+    let body = "";
+    data.forEach((user) => {      
+        body += `<tr><td>${user.top}</td><td>${user.name}</td></tr>`;
+    });
+    topUsuarios.innerHTML = tbody;
+};
