@@ -46,9 +46,6 @@ agregarAlCarro(productos.id)
 const topUsuarios = document.getElementById("data");
 
 fetch('../topusers.json') //no funciona, lo arreglare mientras esta entregado.
-    .then(response => {
-        return response.json();
-    })
     .then(data => mostrarData(data))
     .catch(error => console.log('Error:', error));
 
