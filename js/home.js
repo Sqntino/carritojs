@@ -45,7 +45,10 @@ agregarAlCarro(productos.id)
 
 const topUsuarios = document.getElementById("data");
 
-fetch('../topusers.json') //no funciona, lo arreglare mientras esta entregado.
+fetch('./topusers.json') //no funciona, lo arreglare mientras esta entregado.
+    .then(response => {
+        data = response.users();
+    })
     .then(data => mostrarData(data))
     .catch(error => console.log('Error:', error));
 
@@ -54,5 +57,5 @@ const mostrarData = (data) => {
     data.forEach((user) => {      
         body += `<tr><td>${user.top}</td><td>${user.name}</td></tr>`;
     });
-    topUsuarios.innerHTML = tbody;
+    topUsuarios.innerHTML = body;
 };
